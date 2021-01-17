@@ -4,15 +4,15 @@
 <head>
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../../bootstrap-4.5.3/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../../estilos/css/estiloMenu.css " />
 <link rel="stylesheet" type="text/css" href="../../estilos/css/estilo.css " />
 <link rel="stylesheet" type="text/css" href="../../estilos/css/easy-responsive-tabs.css " />
     <script src="../../estilos/js/jquery-1.9.1.min.js"></script>
-    <script src="../../estilos/js/estiloMenu.js"></script>
+    <!--<script src="../../estilos/js/estiloMenu.js"></script>-->
     <script src="../../estilos/js/easyResponsiveTabs.js"></script>
-    <script src="../../estilos/js/bootstrap.js"></script>
+    <!--<script src="../../estilos/js/bootstrap.js"></script>-->
 
 <script type="text/javascript">
   function mayus(e) {
@@ -23,14 +23,14 @@
 <body>
 <?php include('../../header/header.php');?>
 <div class="jumbotron">
-  <h4 class="text-center"><strong>GESTI&Oacute;N DE USUARIOS</strong></h4>
-     <div id="container-fluid">
+  <h5 class="text-center"><strong>GESTI&Oacute;N DE USUARIOS</strong></h5>
+     <div id="container-fluid" >
  <!--<h1 style="font-size:15px" class="text-center"><strong>USUARIOS</strong></h1>-->
        
         <!--Horizontal Tab-->
 
         <div id="parentHorizontalTab" style="margin-top: 50%;">
-            <ul class="resp-tabs-list hor_1">
+            <ul class="resp-tabs-list hor_1" >
                <!-- <li>Horizontal 1</li>-->
                 <li ><strong class="glyphicon glyphicon-plus">NUEVO</strong></li>
                 <li><strong>BUSCAR</strong></li>
@@ -99,7 +99,7 @@
 </div>
 <br>
 <div class="col text-center">
-  <button class="btn btn-danger btn-sm desbloquea " type="reset"  onclick="btn_guardar_dato_nc()"><span class='glyphicon glyphicon-floppy-disk'></span>Guardar</button>
+  <button class="btn btn-danger btn-sm desbloquea btnNegro" type="reset"  onclick="btn_guardar_dato_nc()"><span class='glyphicon glyphicon-floppy-disk'></span>CANCELAR</button>
  <button class="btn btn-primary btn-sm desbloquea "  onclick="btn_guardar_dato_nc()"><span class='glyphicon glyphicon-floppy-disk' type="button"></span>Guardar</button></div>
                    </form>
 </div></div>

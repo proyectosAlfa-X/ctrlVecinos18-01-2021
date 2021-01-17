@@ -397,7 +397,9 @@ a:focus {
   background-color: #fff;
 }*/
 
-
+.text-inf{
+  color:  #001c2e;
+}
 /*tabla responsive*/
 /*encabezado tabla*/
     .tabla-header{
@@ -436,6 +438,10 @@ a:focus {
     .btn-black{
         background-color: #000;
     }
+    .btnNegro{
+      background-color:black;
+      border: none;
+    }
     /* tabla responsiva*/
     .container {
     width: 100%;
@@ -461,7 +467,7 @@ a:focus {
 }
 
 .table tr {
-    background-color: #f8f8f8;
+    background-color: #dfdfdf;
     border: 1px solid #084D6E;
 
 
@@ -586,3 +592,18 @@ border-left: 4px double #666666;
     background-color: 646B63;
  }
 /*termina tabla responsiva*/
+/* MENU IMAGENES*/
+.imagen:hover {/*-webkit-transform: rotate(5deg);transform: rotate(5deg);*/
+
+       opacity: 0.3;
+    transition: opacity 0.8s;
+  
+
+
+    }/*rota img en grados*/
+    .imagen2{
+    width:80px;
+    height:50px;
+   } 
+
+/*TERMINA MENU IMAGNES*/

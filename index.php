@@ -7,11 +7,13 @@
 <script type="text/javascript">
   function mostrarContrasena(){
     var tipo= document.getElementById('password');
+    var t=document.getElementById('btns');
     if(tipo.type=="password"){
       tipo.type="text";
-
+      t.value="OCULTAR"
     }else{
       tipo.type="password";
+      t.value="VER"
     }
 
   }
@@ -25,7 +27,7 @@
 <div class="login-form">
   <br>
   <form method="post" action="menus/menuA.php">
-     <!--<h1>Inicio de Sesi&oacute;n</h1>-->
+     
      <div ><strong><h3 class="texto-c">INICIO DE SESI&Oacute;N</h3></strong></div><br>
       <div class="form-group">
         <!--<label for="email">Email</label>-->
@@ -40,7 +42,7 @@
       <div class="input-group mb-3">
   <input type="password" class="form-control" placeholder="PASSWORD" id="password" onkeyup="mayus(this);" required="required">
   <div class="input-group-append">
-    <button class="btn btn-theme04" type="button" onclick="mostrarContrasena();" id="btns">VER</button>
+    <input class="btn btn-theme04" type="button" onclick="mostrarContrasena();" id="btns" value="VER"></button>
   </div>
  
 </div>
@@ -57,7 +59,7 @@
                   </div> -->
 
                   <div class="text-center">
-  <button class="btn btn-theme " type="submit" id="btns">GUARDAR</button>
+  <button class="btn btn-theme " type="submit" id="btns">INGRESAR</button>
                       <button class="btn btn-theme04" id="btns" type="reset">CANCELAR</button>
                       <br><br>
 </div><br>
