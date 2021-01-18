@@ -11,14 +11,34 @@
     if(tipo.type=="password"){
       tipo.type="text";
       t.value="OCULTAR"
+
     }else{
       tipo.type="password";
       t.value="VER"
     }
 
   }
-  function mayus(e) {
+  function mayusP(e) {
     e.value = e.value.toUpperCase();
+    var t=document.getElementById('btns');
+    t.style.display  ='block';
+    pt=document.getElementById('password');
+
+    /*
+ipt.addEventListener('keydown', function(event) { 
+            const key = event.key; 
+            if (key === "Backspace" || key === "Delete") { 
+                t.style.display  ='none';
+            } else
+
+t.style.display  ='block';
+            
+        }); 
+    */
+}
+function mayus(e) {
+    e.value = e.value.toUpperCase();
+    
 }
 </script>
 </head>
@@ -40,9 +60,9 @@
 
 
       <div class="input-group mb-3">
-  <input type="password" class="form-control" placeholder="PASSWORD" id="password" onkeyup="mayus(this);" required="required">
+  <input type="password" class="form-control" placeholder="PASSWORD" id="password" onkeyup="mayusP(this);" required="required">
   <div class="input-group-append">
-    <input class="btn btn-theme04" type="button" onclick="mostrarContrasena();" id="btns" value="VER"></button>
+    <input class="btn btn-theme04" type="button" onclick="mostrarContrasena();" id="btns" value="VER" style="display:none;"></button>
   </div>
  
 </div>
