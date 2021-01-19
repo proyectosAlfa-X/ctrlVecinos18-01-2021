@@ -24,17 +24,25 @@
     t.style.display  ='block';
     pt=document.getElementById('password');
 
-    /*
-ipt.addEventListener('keydown', function(event) { 
+var cadena =document.getElementById('password').value;
+var numeroLetras = cadena.length;
+//alert(numeroLetras);
+
+    
+/*pt.addEventListener('keydown', function(event) { 
             const key = event.key; 
+            
             if (key === "Backspace" || key === "Delete") { 
                 t.style.display  ='none';
             } else
 
 t.style.display  ='block';
             
-        }); 
-    */
+        }); */
+        if(numeroLetras===0) {
+        	t.style.display  ='none';
+        }
+    
 }
 function mayus(e) {
     e.value = e.value.toUpperCase();
