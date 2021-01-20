@@ -14,7 +14,7 @@
 
     }else{
       tipo.type="password";
-      t.value="VER"
+      t.value="VER";
     }
 
   }
@@ -22,9 +22,12 @@
     e.value = e.value.toUpperCase();
     var t=document.getElementById('btns');
     t.style.display  ='block';
-    pt=document.getElementById('password');
+   // $(".desbloquea").removeAttr("disabled");
+   // pt=document.getElementById('password');
 
 var cadena =document.getElementById('password').value;
+var cadena1 =document.getElementById('password');
+var t=document.getElementById('btns');
 var numeroLetras = cadena.length;
 //alert(numeroLetras);
 
@@ -41,6 +44,8 @@ t.style.display  ='block';
         }); */
         if(numeroLetras===0) {
         	t.style.display  ='none';
+        	 cadena1.type="password";
+      t.value="VER";
         }
     
 }
